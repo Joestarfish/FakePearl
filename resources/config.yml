@@ -1,0 +1,8 @@
+# The texture of the item. Leave to "ender_pearl" to use the default Ender Pearl item texture.
+# Changing it may let the players notice too easily that it is not a real Ender Pearl.
+# Keep in mind you will need to provide a resource pack containing this texture to your players
+texture: ender_pearl
+
+# The name visible when holding the item.
+# To translate it to multiple languages you will need to add translations to a resource pack
+item-name: Fake Pearl

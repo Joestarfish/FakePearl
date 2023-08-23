@@ -1,0 +1,8 @@
+---
+name: FakePearl
+version: 1.0.0
+main: Joestarfish\FakePearl\Main
+api: 5.0.0
+src-namespace-prefix: Joestarfish\FakePearl
+depend: Customies
+...
