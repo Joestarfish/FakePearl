@@ -2,3 +2,4 @@
 !src/*
 !resources/*
 composer.lock
+package-lock.json

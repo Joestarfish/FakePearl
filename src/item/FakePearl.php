@@ -18,12 +18,21 @@ use pocketmine\player\Player;
 class FakePearl extends EnderPearl implements ItemComponents {
 	use ItemComponentsTrait;
 
-	public function __construct(ItemIdentifier $identifier, string $name = "Unknown") {
+	public function __construct(
+		ItemIdentifier $identifier,
+		string $name = 'Unknown',
+	) {
 		parent::__construct($identifier, $name);
-		$this->initComponent(Main::$texture, new CreativeInventoryInfo(CreativeInventoryInfo::CATEGORY_ITEMS));
+		$this->initComponent(
+			Main::$texture,
+			new CreativeInventoryInfo(CreativeInventoryInfo::CATEGORY_ITEMS),
+		);
 	}
 
-	protected function createEntity(Location $location, Player $thrower) : Throwable {
+	protected function createEntity(
+		Location $location,
+		Player $thrower,
+	): Throwable {
 		return new FakePearlEntity($location, $thrower);
 	}
 }

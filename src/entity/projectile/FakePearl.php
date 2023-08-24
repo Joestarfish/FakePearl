@@ -8,7 +8,7 @@ use pocketmine\entity\projectile\EnderPearl;
 use pocketmine\event\entity\ProjectileHitEvent;
 
 class FakePearl extends EnderPearl {
-	protected function onHit(ProjectileHitEvent $event) : void{ 
-		// noop 
+	protected function onHit(ProjectileHitEvent $event): void {
+		// noop
 	}
 }
