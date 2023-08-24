@@ -1,5 +1,28 @@
 {
-    "require": {
-        "pocketmine/pocketmine-mp": "^5.4"
-    }
+	"name": "joestarfish/fake-pearl",
+	"description": "A PMMP plugin that allows you to throw a fake ender pearl and disorient your opponent",
+	"type": "project",
+	"license": "MIT",
+	"require": {
+		"customiesdevs/customies": "dev-composer"
+	},
+	"require-dev": {
+		"pocketmine/pocketmine-mp": "^5.4"
+	},
+	"repositories": [
+		{
+			"type": "vcs",
+			"url": "https://github.com/Joestarfish/Customies.git"
+		}
+	],
+	"autoload": {
+		"psr-4": {
+			"Joestarfish\\FakePearl\\": "src/"
+		}
+	},
+	"authors": [
+		{
+			"name": "Joestarfish"
+		}
+	]
 }
