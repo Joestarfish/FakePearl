@@ -24,7 +24,7 @@ class FakePearl extends EnderPearl implements ItemComponents {
 	) {
 		parent::__construct($identifier, $name);
 		$this->initComponent(
-			Main::$texture,
+			Main::getItemTexture(),
 			new CreativeInventoryInfo(CreativeInventoryInfo::CATEGORY_ITEMS),
 		);
 	}

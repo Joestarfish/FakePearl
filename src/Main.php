@@ -7,19 +7,22 @@ namespace Joestarfish\FakePearl;
 use pocketmine\plugin\PluginBase;
 use customiesdevs\customies\item\CustomiesItemFactory;
 use Joestarfish\FakePearl\item\FakePearl;
+use pocketmine\utils\Config;
 
 class Main extends PluginBase {
-	public static string $texture;
-	public static string $item_name;
+	private static Config $config;
+
 	public function onLoad(): void {
-		$config = $this->getConfig();
-		self::$texture = $config->getNested('texture', 'ender_pearl');
-		self::$item_name = $config->getNested('item-name', 'Fake Pearl');
+		self::$config = $this->getConfig();
 
 		CustomiesItemFactory::getInstance()->registerItem(
 			FakePearl::class,
 			'minecraft:fake_pearl',
-			self::$item_name,
+			self::$config->get('item-name', 'Fake Pearl'),
 		);
+	}
+
+	public static function getItemTexture() {
+		return self::$config->get('texture', 'ender_pearl');
 	}
 }
