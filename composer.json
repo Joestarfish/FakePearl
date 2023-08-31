@@ -3,11 +3,9 @@
 	"description": "A PMMP plugin that allows you to throw a fake ender pearl and disorient your opponent",
 	"type": "project",
 	"license": "MIT",
-	"require": {
-		"customiesdevs/customies": "dev-composer"
-	},
 	"require-dev": {
-		"pocketmine/pocketmine-mp": "^5.4"
+		"pocketmine/pocketmine-mp": "^5.4",
+		"customiesdevs/customies": "dev-composer"
 	},
 	"repositories": [
 		{
