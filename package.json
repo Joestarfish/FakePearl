@@ -1,9 +1,4 @@
 {
-	"name": "fakepearl",
-	"version": "1.0.0",
-	"description": "A PMMP plugin that allows you to throw a fake ender pearl and disorient your opponent",
-	"author": "Joestarfish",
-	"license": "MIT",
 	"devDependencies": {
 		"@prettier/plugin-php": "^0.20.1"
 	},
