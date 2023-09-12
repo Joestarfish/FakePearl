@@ -9,7 +9,7 @@ A PMMP plugin that allows you to throw a fake ender pearl and disorient your opp
 
 To get started, install the [Customies](https://poggit.pmmp.io/p/Customies/) plugin to your `plugins` folder
 
-Then, start your server and give yourself a Fake Pearl using the command `/give <name> fake_pearl`
+Then, start your server and give yourself a Fake Pearl using the command `/give <name> fake_pearl:fake_pearl`
 
 # Configuration
 

@@ -17,7 +17,7 @@ class Main extends PluginBase {
 
 		CustomiesItemFactory::getInstance()->registerItem(
 			FakePearl::class,
-			'minecraft:fake_pearl',
+			'fake_pearl:fake_pearl',
 			self::$config->get('item-name', 'Fake Pearl'),
 		);
 	}
